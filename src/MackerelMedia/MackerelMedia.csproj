@@ -61,6 +61,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="DrasticActions.UI" Version="0.0.1-preview" />
+		<PackageReference Include="Markdig" Version="0.37.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0-rc.2.24473.5" />
 	</ItemGroup>

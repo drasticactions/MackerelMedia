@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:MackerelMedia.Controls"
+             xmlns:mackerelMedia="clr-namespace:MackerelMedia"
              x:Class="MackerelMedia.MainPage">
 
-   <Grid ColumnDefinitions="*" RowDefinitions="*">
-    <Editor />
+   <Grid RowDefinitions="Auto, *">
+    <HorizontalStackLayout>
+        <Button Text="Bold" Clicked="Button_OnClicked"></Button>
+    </HorizontalStackLayout>
+       <Editor Grid.Row="1" x:Name="MmEditor" />
    </Grid>
 
 </ContentPage>
