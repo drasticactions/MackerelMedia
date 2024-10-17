@@ -36,8 +36,8 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.ConfigureMauiHandlers(handlers =>
 			{
-#if MACCATALYST
-				handlers.AddHandler<Editor, Controls.BlogHandler>();
+#if MACCATALYST || IOS
+                handlers.AddHandler<Editor, Controls.BlogHandler>();
 #endif
 			})
 			.ConfigureFonts(fonts =>
